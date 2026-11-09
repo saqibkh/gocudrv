@@ -8,6 +8,8 @@ name: CUDA integration tests (simulated H100)
 
 on:
   workflow_dispatch:
+  push:
+    branches: [verify-gpu-sim]
   pull_request:
     paths:
       - "cuda/**"
